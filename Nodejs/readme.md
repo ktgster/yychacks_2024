@@ -1,1 +1,10 @@
-This is the readme for yyc hacks 2024
+YYC Hacks 2024 API
+
+to run
+
+    npm run start
+
+to run & monitor code changes
+
+    npm run dev
+
