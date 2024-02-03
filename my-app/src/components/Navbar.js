@@ -24,47 +24,34 @@ const NavBar = () => {
   const items = [
     {
       id: 1,
-      name: "Home",
+      name: "How it works",
       path: "/",
       logo: null,
       style: "",
     },
     {
       id: 2,
-      name: "About",
-      path: "/about/faq",
+      name: "Support",
+      path: "/",
       logo: null,
       style: "",
-      subItems: [
-        {
-          name: "FAQ",
-          path: "/about/faq",
-          style: " text-white hover:text-violet-600 hidden",
-        },
-      ],
+      // subItems: [
+      //   {
+      //     name: "FAQ",
+      //     path: "/about/faq",
+      //     style: " text-white hover:text-violet-600 hidden",
+      //   },
+      // ],
     },
     {
       id: 3,
-      name: "Testimonials",
-      path: "/testimonial",
+      name: "Become a host",
+      path: "/",
       logo: null,
       style: "",
-    },
-    {
-      id: 4,
-      name: "Careers",
-      path: "/careers",
-      logo: null,
-      style: "",
-    },
-    {
-      id: 5,
-      name: "Contact",
-      path: "/quote",
-      logo: null,
-      style: "",
-    },
+    }
   ];
+
   const quote = [
     {
       id: 1,
@@ -79,7 +66,7 @@ const NavBar = () => {
 
   return (
     <div
-      className={` flex fixed justify-between items-center w-full px-4 h-16 z-10 text-white md:justify-start md:bg-black md:${
+      className={` flex fixed gap-5 justify-between items-center w-full px-4 h-16 z-10 text-white md:justify-start md:bg-transparent md:${
         visible ? "" : "hidden"
       }`}
       style={{ transition: "opacity 0.3s ease-in-out" }}
@@ -96,7 +83,7 @@ const NavBar = () => {
         {items.map((item, index) => (
           <li
             key={index}
-            className=" flex md:px-4 lg:px-10 cursor-pointer capitalize hover:scale-105 duration-200"
+            className=" flex md:px-4 cursor-pointer capitalize hover:scale-105 duration-200"
           >
             <Link
               href={item.path}
@@ -108,9 +95,19 @@ const NavBar = () => {
         ))}
       </ul>
 
+      <img
+        loading="lazy"
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/cfab6d21a3cd0885eb313acdbbe7b6198b4ab077516163d5a8e41ca8232b12d1?"
+        className="hidden md:flex aspect-square w-[50px] ml-auto"
+      />
+
+      <button className="hidden md:flex lg:font-bold justify-center text-center items-center lg:text-lg bg-white text-black rounded-[100px] px-5 py-2">
+        Log In
+      </button>
+
       {/* for quote on md screen */}
 
-      <ul className="hidden md:flex">
+      {/*<ul className="hidden md:flex">
         {quote.map((item, index) => (
           <li key={index}>
             <Link href={item.path} className={item.style}>
@@ -118,7 +115,7 @@ const NavBar = () => {
             </Link>
           </li>
         ))}
-      </ul>
+      </ul>*/}
 
       {/* for socials */}
 
@@ -160,7 +157,7 @@ const NavBar = () => {
             </div>
           )}
         </div> */}
-        <ul className="flex outline justify-center z-10 items-center  w-1/2 mr-1 bg-gradient-to-r from-[#C14197] to-red-600 rounded-lg md:hidden">
+        {/*<ul className="flex outline justify-center z-10 items-center  w-1/2 mr-1 bg-gradient-to-r from-[#C14197] to-red-600 rounded-lg md:hidden">
           {quote.map((item, index) => (
             <li key={index}>
               <Link
@@ -173,7 +170,7 @@ const NavBar = () => {
               </Link>
             </li>
           ))}
-        </ul>
+        </ul>*/}
       </div>
       {nav && (
         <ul className="flex flex-col pl-4 absolute top-16 left-0 rounded-lg justify-center w-full h-screen py-16 text-xl  bg-gradient-to-r from-purple-500 to-red-600">
@@ -192,7 +189,7 @@ const NavBar = () => {
             </li>
           ))}
           <div className="flex my-12">
-            {quote.map((item, index) => (
+            {/*{quote.map((item, index) => (
               <li key={index}>
                 <Link
                   href={item.path}
@@ -201,7 +198,7 @@ const NavBar = () => {
                   {item.name}
                 </Link>
               </li>
-            ))}
+            ))}*/}
           </div>
 
           {/* <div className="flex flex-row justify-center">
