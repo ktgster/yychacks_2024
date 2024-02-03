@@ -1,5 +1,5 @@
 1. 
-Install the required python packages to run the streamlist app as follows:
+Install the required python packages to run the streamlit app as follows:
 pip install -r requirements.txt
 
 2. 
