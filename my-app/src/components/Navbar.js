@@ -68,7 +68,7 @@ const NavBar = () => {
   const quote = [
     {
       id: 1,
-      name: "GET A QUOTE",
+      name: "Log In",
       path: "/quote",
       logo: null,
       style:
@@ -79,7 +79,7 @@ const NavBar = () => {
 
   return (
     <div
-      className={` flex fixed justify-between items-center w-full px-4 h-16 z-10 text-white md:justify-start md:bg-gradient-to-r from-[#4601f4] from-10% via-purple-700 via-30%  to-[#d90303] to-100% md:${
+      className={` flex fixed justify-between items-center w-full px-4 h-16 z-10 text-white md:justify-start md:bg-black md:${
         visible ? "" : "hidden"
       }`}
       style={{ transition: "opacity 0.3s ease-in-out" }}
