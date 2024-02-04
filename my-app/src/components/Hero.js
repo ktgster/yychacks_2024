@@ -16,7 +16,7 @@ export default function Hero() {
 			      <br />
 			      Connecting Immigrants with Welcoming Host Families.
 			    </div>
-			    <button className="relative justify-center hover:shadow-neutral-900 shadow-lg hover:scale-105 px-10 py-3.5 mt-8 mb-32 text-3xl font-bold tracking-wide text-center text-white whitespace-nowrap bg-[#c8102f] rounded-[100px] max-md:px-5 max-md:mb-10" style={{ transition: "0.35s ease-in-out" }} >Create Account</button>
+			    <button className="relative justify-center hover:shadow-neutral-900 shadow-2xl hover:scale-105 px-10 py-3.5 mt-8 mb-32 text-3xl font-bold tracking-wide text-center text-white whitespace-nowrap bg-[#c8102f] rounded-[100px] max-md:px-5 max-md:mb-10" style={{ transition: "0.35s ease-in-out" }} >Create Account</button>
 				{/*"#c810df"*/}				
 			</div>
 			<Footer />
