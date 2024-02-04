@@ -1,31 +1,39 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import { useTranslation } from "react-i18next";
 
 export default function LangaugeToggle() {
 
 	const [ displayStatus, setDisplayStatus ] = useState("none");
 
+	const { i18n } = useTranslation();
+
 	const languages = [
 		{
 			name: "English",
-			abbr: "EN"
+			abbr: "en"
 		},
 		{
 			name: "Francais",
-			abbr: "FR"
+			abbr: "fr"
 		},
 		{
 			name: "Español",
-			abbr: "ES"
+			abbr: "es"
 		},
 		{
 			name: "Україна",
-			abbr: "UK"
+			abbr: "uk"
 		},
 		{
 			name: "ਪੰਜਾਬੀ",
-			abbr: "PA"
+			abbr: "pa"
 		},
 	];
+
+	useEffect(() => {
+		window.addEventListener("click", e => setDisplayStatus("none")); 
+    	return () => window.removeEventListener("click", e => setDisplayStatus("none"));
+	}, [])
 
 	return (
 		<div className="relative">
@@ -55,7 +63,9 @@ export default function LangaugeToggle() {
 							<li 
 								key={index} 
 								style={{ transition: "0.15s ease-in-out" }} 
-								className="bg-gray-900 hover:bg-[#c8102f] py-[6px] cursor-pointer">
+								className="bg-gray-900 hover:bg-[#c8102f] py-[6px] cursor-pointer"
+								onClick={() => {i18n.changeLanguage(lang.abbr)}}
+							>
 			        			{lang.name}
 							</li>
 						))

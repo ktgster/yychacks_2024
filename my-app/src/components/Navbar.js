@@ -98,11 +98,12 @@ const NavBar = () => {
         <LanguageToggle />
       </div>
 
-      <a href={"https://www.bing.com"} target="_blank">
+      <a href={"/"}>
         <button
           className="hidden md:flex lg:font-bold justify-center text-center items-center lg:text-lg bg-white text-black rounded-[100px] px-5 py-2 mr-4 hover:scale-105"
           style={{ transition: "0.35s ease-in-out" }}
         >
+        {t('navbar.button')}
         </button>
       </a>
 
