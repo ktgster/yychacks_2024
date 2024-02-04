@@ -66,7 +66,7 @@ const NavBar = () => {
 
   return (
     <div
-      className={`flex fixed gap-5 justify-between items-center w-full px-4 h-24 z-10 text-white md:justify-start md:bg-transparent md:${
+      className={`flex fixed gap-5 justify-between items-center w-full px-4 py-10 h-24 z-10 text-white md:justify-start md:bg-transparent md:${
         visible ? "" : "hidden"
       }`}
       style={{ transition: "opacity 0.3s ease-in-out" }}

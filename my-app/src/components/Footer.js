@@ -4,92 +4,118 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <div>
-      <div className=" flex flex-col bg-gray-500 text-white md:hidden">
-        <div className="flex flex-col md:flex-row md:justify-center items-center space-y-2 md:space-x-4">
-          <div>
-            {/* <img src="/footerlogo.png" width={300} height={200} alt="logo" /> */}
+      <footer
+            className="text-center text-lg-start text-white bg-gradient-to-t from-black via-black to-transparent mt-20"
+      >
+   
+        <section
+                className="d-flex justify-content-between p-4 bg-transparent">
+       
+          
+         
+          <div className="ml-auto">
+            <a href="#!" className="text-white me-4">
+              <i className="fab fa-facebook-f"></i>
+            </a>
+            <a href="#!" className="text-white me-4">
+              <i className="fab fa-twitter"></i>
+            </a>
+            <a href="#!" className="text-white me-4">
+              <i className="fab fa-google"></i>
+            </a>
+            <a href="#!" className="text-white me-4">
+              <i className="fab fa-instagram"></i>
+            </a>
+            <a href="#!" className="text-white me-4">
+              <i className="fab fa-linkedin"></i>
+            </a>
           </div>
-          <div className="flex flex-col justify-center items-center">
-            {/* <div className="flex flex-row space-x-2">
-              <div className="flex flex-row ">
-                <BsTelephoneFill color="white" size={20} /> : 403-000-0000
-              </div>
-
-              <div className="flex flex-row">
-                <MdEmail size={20} />: info@humanmeet.ca
-              </div>
-            </div> */}
-            <div>
-              <div className="break-words">300-80 10st NE</div>
-              <div> Calgary, AB T1S 2Z1</div>
-            </div>
-          </div>
-        </div>
-
-        <div className="flex flex-col justify-center items-center space-y-2">
-          <div className="flex flex-row  items-center ">
-            <Link href="/">
-              <img src="/insta.png" height={25} width={25} alt="insta" />
-            </Link>
-            <Link href="/">
-              <img src="/facebook.png" height={25} width={25} alt="insta" />
-            </Link>
-          </div>
-          <div className="flex flex-row space-x-2 items-center justify-center">
-            <Link href={"/privacy"}>Privacy Policy</Link>
-            <Link href={"/cookies"}>Cookies Policy</Link>
-          </div>
-          <div className="flex  font-semibold justify-center items-center">
-            &copy; All rights reserved.
-          </div>
-        </div>
-      </div>
-
-      {/* middle screen */}
-      <div className="hidden md:flex flex-row justify-center space-x-36 items-center w-12/13 bg-gray-500 text-white ">
-        <div className="flex flex-col justify-center items-center space-y-2 space-x-4">
-          <div>
-            <img src="/footerlogo.png" width={300} height={200} alt="logo" />
-          </div>
-          {/* <div className="flex flex-row  items-center space-x-2 ">
-            <Link href="https://www.instagram.com/ultralightinstallationteam/">
-              <img src="/insta.png" height={25} width={25} alt="insta" />
-            </Link>
-            <Link href="https://www.facebook.com/UltraLightInstallationTeam/">
-              <img src="/facebook.png" height={25} width={25} alt="insta" />
-            </Link>
-          </div> */}
-          {/* <div className="flex flex-col justify-center items-center">
+       
+        </section>
+    
+        <section className="">
+          <div className="container text-center text-md-start mt-5">
+          
+            <div className="row mt-3">
             
-            
-          </div> */}
-        </div>
-        <div className="flex flex-col justify-start items-center space-y-2">
-          <div className="flex flex-col ">
-            {/* <div className="flex flex-row items-start ">
-              <BsTelephoneFill color="white" size={20} /> : 587-370-8607
+              <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+               
+                <h6 className="text-uppercase fw-bold">Your Perfect Day!</h6>
+                <hr
+                    className="mb-4 mt-0 d-inline-block mx-auto"
+                    style={{width: "60px", backgroundColor: "transparent", height: "2px"}}
+                    />
+                <p>
+                  Welcome to YYC Winter! Our mission is to provide the best services for you to discover and experience our great city. Please feel free to connect with us.
+                </p>
+              </div>
+             
+              {/* <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              
+                <h6 className="text-uppercase fw-bold">Products</h6>
+                <hr
+                    className="mb-4 mt-0 d-inline-block mx-auto"
+                    style={{width: "60px", backgroundColor: "#7c4dff", height: "2px"}}
+                    />
+                <p>
+                  <a href="#!" className="text-white">MDBootstrap</a>
+                </p>
+                <p>
+                  <a href="#!" className="text-white">MDWordPress</a>
+                </p>
+                <p>
+                  <a href="#!" className="text-white">BrandFlow</a>
+                </p>
+                <p>
+                  <a href="#!" className="text-white">Bootstrap Angular</a>
+                </p>
+              </div> */}
+        
+              <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+               
+                <h6 className="text-uppercase fw-bold">Useful links</h6>
+                <hr
+                    className="mb-4 mt-0 d-inline-block mx-auto"
+                    style={{width: "60px", backgroundColor: "#7c4dff", height: "2px"}}
+                    />
+                <p>
+                  <a href="#!" className="text-white">Your Account</a>
+                </p>
+                <p>
+                  <a href="#!" className="text-white">Become a Member</a>
+                </p>
+                <p>
+                  <a href="#!" className="text-white">Help</a>
+                </p>
+              </div>
+             
+              <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              
+                <h6 className="text-uppercase fw-bold">Contact</h6>
+                <hr
+                    className="mb-4 mt-0 d-inline-block mx-auto"
+                    style={{width: "60px", backgroundColor: "transparent", height: "2px"}}
+                    />
+                <p><i className="fas fa-home mr-3"></i> Calgary, Alberta, Canada</p>
+                <p><i className="fas fa-envelope mr-3"></i> info@yycwinter.ca</p>
+                <p><i className="fas fa-phone mr-3"></i> + 01 234 5678</p>
+                <p><i className="fas fa-print mr-3"></i> + 01 234 5678</p>
+              </div>
+         
             </div>
-
-            <div className="flex flex-row items-start">
-              <MdEmail color="white" size={20} />: info@Ultralit.ca
-            </div> */}
+           
           </div>
-          <div className="flex flex-row space-x-2 items-center justify-center">
-            <Link href={"/privacy"}>Privacy Policy</Link>
-            <Link href={"/cookies"}>Cookies Policy</Link>
-          </div>
-        </div>
-        <div className="flex flex-col  space-y-2">
-          <div>
-            <div className="break-words">300-80088 2</div>
-            <div> Foothills, 2Z1</div>
-          </div>
-          <div className="flex  font-semibold justify-center items-center">
-            &copy; All rights reserved.
-          </div>
-        </div>
+        </section>
+      <div
+           className="text-center p-3"
+           style={{backgroundColor: "rgba(0, 0, 0, 0.2)"}}
+           >
+            © 2024 Copyright Hosts Welcoming Hearts
       </div>
-    </div>
+   
+    </footer>
+
+  </div>
   );
 }
 export default Footer;
