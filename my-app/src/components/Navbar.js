@@ -66,7 +66,7 @@ const NavBar = () => {
 
   return (
     <div
-      className={` flex fixed gap-5 justify-between items-center w-full px-4 h-16 z-10 text-white md:justify-start md:bg-transparent md:${
+      className={`flex fixed gap-5 justify-between items-center w-full px-4 h-24 z-10 text-white md:justify-start md:bg-transparent md:${
         visible ? "" : "hidden"
       }`}
       style={{ transition: "opacity 0.3s ease-in-out" }}
@@ -83,11 +83,11 @@ const NavBar = () => {
         {items.map((item, index) => (
           <li
             key={index}
-            className=" flex md:px-4 cursor-pointer capitalize hover:scale-105 duration-200"
+            className=" flex md:px-4 cursor-pointer hover:scale-105 capitalize duration-200"
           >
             <Link
               href={item.path}
-              className={" hover:text-violet-600 md:text-xl" + item.style}
+              className={"hover:text-[#c8102f] md:text-xl" + item.style}
             >
               {item.name}
             </Link>
@@ -101,7 +101,7 @@ const NavBar = () => {
         className="hidden md:flex aspect-square w-[50px] ml-auto"
       />
 
-      <button className="hidden md:flex lg:font-bold justify-center text-center items-center lg:text-lg bg-white text-black rounded-[100px] px-5 py-2">
+      <button className="hidden md:flex lg:font-bold justify-center text-center items-center lg:text-lg bg-white text-black rounded-[100px] px-5 py-2 mr-4 ">
         Log In
       </button>
 
