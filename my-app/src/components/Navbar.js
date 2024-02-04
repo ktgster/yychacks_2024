@@ -1,5 +1,6 @@
 
 import React, { useEffect, useState } from "react";
+import LanguageToggle from "./LangaugeToggle.js";
 
 import { Link } from "react-router-dom";
 const NavBar = () => {
@@ -73,11 +74,6 @@ const NavBar = () => {
     >
       {/* logo */}
       <img loading="lazy" src="../images/domi-wordmark.png" alt="logo" style={{height: "40px"}}/>
-      {/*<div className="hidden md:flex cursor-pointer  z-0">
-        <Link href="/">
-          { <Image src={Logo} alt="logo" width={100} height={100} /> }
-        </Link>
-      </div>*/}
 
       {/* items nav bar */}
       <ul className="hidden md:flex">
@@ -96,11 +92,9 @@ const NavBar = () => {
         ))}
       </ul>
 
-      <img
-        loading="lazy"
-        src="https://cdn.builder.io/api/v1/image/assets/TEMP/cfab6d21a3cd0885eb313acdbbe7b6198b4ab077516163d5a8e41ca8232b12d1?"
-        className="hidden md:flex aspect-square w-[50px] ml-auto"
-      />
+      <div className="ml-auto">
+        <LanguageToggle />
+      </div>
 
       <a href={"https://www.bing.com"} target="_blank">
         <button 
@@ -111,38 +105,6 @@ const NavBar = () => {
         </button>
       </a>
 
-      {/* for quote on md screen */}
-
-      {/*<ul className="hidden md:flex">
-        {quote.map((item, index) => (
-          <li key={index}>
-            <Link href={item.path} className={item.style}>
-              {item.name}
-            </Link>
-          </li>
-        ))}
-      </ul>*/}
-
-      {/* for socials */}
-
-      {/* <ul className="hidden lg:flex">
-        {socials.map((item, index) => (
-          <li
-            key={index}
-            className=" flex md:px-4 text-lg lg:px-10 cursor-pointer"
-          >
-            <Link href={item.path} target="_blank">
-              <Image
-                src={item.logo}
-                alt={item.name}
-                width={30}
-                height={30}
-                className={item.style + ""}
-              />
-            </Link>
-          </li>
-        ))}
-      </ul> */}
 
       {/* For nav bar for mobile */}
       <div className=" justify-between flex flex-row   w-full md:hidden">
