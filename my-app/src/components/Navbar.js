@@ -72,11 +72,12 @@ const NavBar = () => {
       style={{ transition: "opacity 0.3s ease-in-out" }}
     >
       {/* logo */}
-      <div className="hidden md:flex cursor-pointer  z-0">
+      <img loading="lazy" src="../images/domi-wordmark.png" alt="logo" style={{height: "40px"}}/>
+      {/*<div className="hidden md:flex cursor-pointer  z-0">
         <Link href="/">
-          {/* <Image src={Logo} alt="logo" width={100} height={100} /> */}
+          { <Image src={Logo} alt="logo" width={100} height={100} /> }
         </Link>
-      </div>
+      </div>*/}
 
       {/* items nav bar */}
       <ul className="hidden md:flex">
@@ -102,7 +103,10 @@ const NavBar = () => {
       />
 
       <a href={"https://www.bing.com"} target="_blank">
-        <button className="hidden md:flex lg:font-bold justify-center text-center items-center lg:text-lg bg-white text-black rounded-[100px] px-5 py-2 mr-4 ">
+        <button 
+          className="hidden md:flex lg:font-bold justify-center text-center items-center lg:text-lg bg-white text-black rounded-[100px] px-5 py-2 mr-4 hover:scale-105"
+          style={{ transition: "0.35s ease-in-out" }}
+        >
           Log In
         </button>
       </a>
