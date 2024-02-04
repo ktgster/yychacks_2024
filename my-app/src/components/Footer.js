@@ -1,6 +1,5 @@
 import React from "react";
-// import img from "next/img";
-import { Link } from "react-router-dom";
+
 function Footer() {
   return (
     <div>

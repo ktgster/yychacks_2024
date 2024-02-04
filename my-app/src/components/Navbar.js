@@ -101,9 +101,11 @@ const NavBar = () => {
         className="hidden md:flex aspect-square w-[50px] ml-auto"
       />
 
-      <button className="hidden md:flex lg:font-bold justify-center text-center items-center lg:text-lg bg-white text-black rounded-[100px] px-5 py-2 mr-4 ">
-        Log In
-      </button>
+      <a href={"https://www.bing.com"} target="_blank">
+        <button className="hidden md:flex lg:font-bold justify-center text-center items-center lg:text-lg bg-white text-black rounded-[100px] px-5 py-2 mr-4 ">
+          Log In
+        </button>
+      </a>
 
       {/* for quote on md screen */}
 
