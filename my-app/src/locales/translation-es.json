@@ -1,0 +1,36 @@
+{
+  "landing": {
+    "title": "Anfitriones que Dan la Bienvenida",
+    "subtitle_find": "Encuentra Tu Hogar Lejos de Casa:",
+    "subtitle_connect": "Conectando Inmigrantes con Familias Anfitrionas Acogedoras.",
+    "button": "Crear Cuenta"
+  },
+  "navbar": {
+    "items": {
+      "works": "Cómo Funciona",
+      "support": "Soporte",
+      "host": "Conviértete en Anfitrión"
+    },
+    "quote": {
+      "login": "Iniciar Sesión"
+    },
+    "button": "Iniciar Sesión"
+  },
+  "footer": {
+    "welcome": "BIENVENIDO A CALGARY",
+    "welcome_text": "Empoderando a los recién llegados en Calgary, DomiYYC conecta a los inmigrantes con familias anfitrionas locales, fomentando un sentido de comunidad y pertenencia.",
+    "useful": "Enlaces Útiles",
+    "links": {
+      "account": "Tu Cuenta",
+      "member": "Conviértete en Miembro",
+      "help": "Ayuda"
+    },
+    "contact": {
+      "title": "Contacto",
+      "city": "Calgary, Alberta, Canadá",
+      "email": "info@domiyyc.com",
+      "phone": "+ 01 234 5678",
+      "fax": "+ 01 234 5678"
+    }
+  }
+}
