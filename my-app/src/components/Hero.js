@@ -19,7 +19,7 @@ export default function Hero() {
 			      <br />
 					{t('landing.subtitle_connect')}
 			    </div>
-			    <a href={"http://www.google.ca"} target="_blank">
+			    <a href={"https://www.figma.com/proto/nwmrnc8SjpiedqwhYADYWi/Design?page-id=33%3A88&type=design&node-id=179-2289&viewport=-262%2C2115%2C0.16&t=tp8R4TUKL4vDwh6v-1&scaling=scale-down&starting-point-node-id=179%3A2289"} target="_blank">
 			    	<button className="relative justify-center hover:shadow-neutral-900 shadow-2xl hover:scale-105 px-10 py-3.5 mt-8 mb-32 text-3xl font-bold tracking-wide text-center text-white whitespace-nowrap bg-[#c8102f] rounded-[100px] max-md:px-5 max-md:mb-10" style={{ transition: "0.35s ease-in-out" }} >
 							{t('landing.button')}
 						</button>
