@@ -1,0 +1,36 @@
+{
+  "landing": {
+    "title": "Hôtes Accueillant des Cœurs",
+    "subtitle_find": "Trouvez Votre Chez-Vous loin de Chez Vous :",
+    "subtitle_connect": "Mettre en Relation les Immigrants avec des Familles d'Accueil Accueillantes.",
+    "button": "Créer un Compte"
+  },
+  "navbar": {
+    "items": {
+      "works": "Comment ça marche",
+      "support": "Soutien",
+      "host": "Devenir un hôte"
+    },
+    "quote": {
+      "login": "Se connecter"
+    },
+    "button": "Se Connecter"
+  },
+  "footer": {
+    "welcome": "BIENVENUE À CALGARY",
+    "welcome_text": "Donnant du pouvoir aux nouveaux arrivants à Calgary, DomiYYC connecte les immigrants avec des familles d'accueil locales, favorisant un sentiment de communauté et d'appartenance.",
+    "useful": "Liens Utiles",
+    "links": {
+      "account": "Votre Compte",
+      "member": "Devenir Membre",
+      "help": "Aide"
+    },
+    "contact": {
+      "title": "Contact",
+      "city": "Calgary, Alberta, Canada",
+      "email": "info@domiyyc.com",
+      "phone": "+ 01 234 5678",
+      "fax": "+ 01 234 5678"
+    }
+  }
+}

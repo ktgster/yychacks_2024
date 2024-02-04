@@ -3,11 +3,13 @@ import React, { useEffect, useState } from "react";
 import LanguageToggle from "./LangaugeToggle.js";
 
 import { Link } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 const NavBar = () => {
   const [nav, setNav] = useState(false);
 
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
+  const { t} = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,14 +27,14 @@ const NavBar = () => {
   const items = [
     {
       id: 1,
-      name: "How it works",
+      name: "navbar.items.works",
       path: "/",
       logo: null,
       style: "",
     },
     {
       id: 2,
-      name: "Support",
+      name: "navbar.items.support",
       path: "/",
       logo: null,
       style: "",
@@ -46,7 +48,7 @@ const NavBar = () => {
     },
     {
       id: 3,
-      name: "Become a host",
+      name: "navbar.items.host",
       path: "/",
       logo: null,
       style: "",
@@ -56,7 +58,7 @@ const NavBar = () => {
   const quote = [
     {
       id: 1,
-      name: "Log In",
+      name: "navbar.quote.login",
       path: "/quote",
       logo: null,
       style:
@@ -86,7 +88,7 @@ const NavBar = () => {
               href={item.path}
               className={"hover:text-[#c8102f] md:text-xl" + item.style}
             >
-              {item.name}
+              {t(item.name)}
             </Link>
           </li>
         ))}
@@ -97,11 +99,10 @@ const NavBar = () => {
       </div>
 
       <a href={"https://www.bing.com"} target="_blank">
-        <button 
+        <button
           className="hidden md:flex lg:font-bold justify-center text-center items-center lg:text-lg bg-white text-black rounded-[100px] px-5 py-2 mr-4 hover:scale-105"
           style={{ transition: "0.35s ease-in-out" }}
         >
-          Log In
         </button>
       </a>
 
@@ -152,7 +153,7 @@ const NavBar = () => {
                 href={item.path}
                 className={item.style + " ml-4"}
               >
-                {item.name}
+                {item.name}**
               </Link>
             </li>
           ))}
